@@ -77,6 +77,7 @@
 .watch {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 5px 66px;
@@ -114,6 +115,7 @@
 .bag {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 5px 66px;
@@ -123,6 +125,7 @@
 .shoe {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 5px 66px;
@@ -141,7 +144,7 @@
 }
 .shoe-1 {
   border: 2px solid #929292;
-  padding: 31px;
+  padding: 40px;
   text-align: center;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.192);
@@ -153,17 +156,17 @@
 .cards {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 24px;
 }
 
 .subscribe {
-    width: 80%;
-    margin: auto;
-    margin-top: 169px;
+  width: 80%;
+  margin: auto;
+  margin-top: 169px;
   background: #f2e6e6;
   padding: 144px 0;
   text-align: center;
-
 }
 
 .subscribe h2 {
@@ -190,15 +193,134 @@
   border-radius: 6px 0 0 6px;
 }
 .subscribe-box input::placeholder {
-  color: #CCCCCC;
+  color: #cccccc;
 }
 
 .subscribe-box button {
   padding: 21px 48px;
   border: none;
   font-size: 24px;
-  background: linear-gradient(to top, #FF136F, #FF589B);
+  background: linear-gradient(to top, #ff136f, #ff589b);
   color: white;
   border-radius: 0 6px 6px 0;
   cursor: pointer;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .h2 {
+    font-size: 40px;
+  }
+
+  .hero h3 {
+    font-size: 32px;
+  }
+  .cards {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .categories {
+    flex-wrap: wrap;
+  }
+  .items {
+    flex-wrap: wrap;
+  }
+  .watch,
+  .bag,
+  .shoe {
+    flex-wrap: wrap;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+  .subscribe-box input {
+    width: 250px;
+    font-size: 18px;
+  }
+
+  .subscribe-box button {
+    font-size: 18px;
+    padding: 18px 30px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .navbar {
+    width: 100%;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .categories {
+    width: 100%;
+  }
+
+  .items {
+    flex-direction: column;
+  }
+
+  .watch,
+  .bag,
+  .shoe {
+    width: 100%;
+    padding: 2px;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .watch,
+  .bag,
+  .shoe img{
+    width: 100%;
+  }
+  .shoes {
+    width: 100%;
+  }
+  .shoe-1 img{
+    width: 100%;
+  }
+
+  .cards {
+    flex-direction: column;
+    padding: 2px;
+  }
+
+  .subscribe {
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .subscribe-box {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .subscribe-box input {
+    border-radius: 6px;
+    width: 100%;
+  }
+
+  .subscribe-box button {
+    border-radius: 6px;
+    width: 100%;
+  }
+  .right img{
+    width: 100%;
+  }
+  .subscribe-box input {
+  font-size: 14px;
+  padding: 4px;
+  }
+
 }

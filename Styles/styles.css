@@ -12,7 +12,13 @@
 .p{
     color: #4E4E4E;
 }
-
+.black-btn{
+    background: black;
+    color: white;
+    padding: 16px 28px;
+    font-weight: 600;
+    border-radius: 8px;
+}
 
 
 .navbar{
@@ -63,14 +69,19 @@
     font-weight: 700;
     margin-top: 60px;
 }
+.items{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
 
 .watch{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5px 66px;
     background: #FF9C35;
-    width: 359px;
     border-radius: 12px;
 }
 .watch h4{
@@ -101,27 +112,48 @@
     height: 110px;
 }
 
-.items{
-    display: flex;
-    gap: 30px;
-    justify-content: space-around;
-}
 
 .bag{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5px 66px;
     background: #FF136F;
-    width: 359px;
     border-radius: 12px;
 }
 .shoe{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5px 66px;
     background: #3F07F8;
-    width: 359px;
     border-radius: 12px;
+}
+
+.shoes{
+    width: 80%;
+    margin: auto;
+}
+.shoes h3{
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 60px;
+}
+.shoe-1{
+    border: 2px solid #929292;
+    padding: 31px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.192);
+}
+.shoe-1 h4{
+    font-size: 24px;
+    font-weight: 600;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
 }

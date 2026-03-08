@@ -1,0 +1,33 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+.h2{
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.p{
+    color: #4E4E4E;
+}
+
+
+
+.navbar{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FEEAE9;
+    padding: 49px;
+    margin-top: 49px;
+    border-radius: 16px;
+}
+

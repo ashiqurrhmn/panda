@@ -28,9 +28,15 @@
     display: flex;
     justify-content: space-between;
     background-color: #FEEAE9;
-    padding: 49px;
+    /* padding: 49px; */
     margin-top: 49px;
     border-radius: 16px;
+}
+.left{
+    padding: 49px;
+}
+.right{
+    padding: 49px;
 }
 
 .hero h3{
@@ -48,4 +54,74 @@
     font-weight: 600;
 }
 
+.categories{
+    width: 80%;
+    margin: auto;
+}
+.categories h3{
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 60px;
+}
 
+.watch{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 66px;
+    background: #FF9C35;
+    width: 359px;
+    border-radius: 12px;
+}
+.watch h4{
+    color: white;
+    font-size: 36px;
+    font-weight: 600;  
+}
+.bag h4{
+    color: white;
+    font-size: 36px;
+    font-weight: 600;  
+}
+.shoe h4{
+    color: white;
+    font-size: 36px;
+    font-weight: 600;  
+}
+.watch img{
+    width: 88.21;
+    height: 110px;
+}
+.bag img{
+    width: 88.21;
+    height: 110px;
+}
+.shoe img{
+    width: 88.21;
+    height: 110px;
+}
+
+.items{
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.bag{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 66px;
+    background: #FF136F;
+    width: 359px;
+    border-radius: 12px;
+}
+.shoe{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 66px;
+    background: #3F07F8;
+    width: 359px;
+    border-radius: 12px;
+}
